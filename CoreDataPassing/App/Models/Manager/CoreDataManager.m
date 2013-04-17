@@ -6,7 +6,7 @@
 #import "CoreDataManager.h"
 
 @interface CoreDataManager ()
-@property(nonatomic, copy) NSString *storeFileName;
+@property(nonatomic, copy, readwrite) NSString *storeFileName;
 @end
 
 @implementation CoreDataManager {

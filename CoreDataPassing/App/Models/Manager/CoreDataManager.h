@@ -8,6 +8,8 @@
 
 @interface CoreDataManager : NSObject
 
+@property(nonatomic, copy, readonly) NSString *storeFileName;
+
 + (CoreDataManager *)sharedManager;
 
 - (void)saveContext;

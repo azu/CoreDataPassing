@@ -31,10 +31,15 @@
 
 - (void)viewWillAppear:(BOOL) animated {
     [super viewWillAppear:animated];
+    [self reloadCoreData];
+}
 
+- (void)reloadCoreData {
     // 切り替わった時に作り直す
     _fetchedResultsController = nil;
     [self.tableView reloadData];
+    // タイトルをsqliteのファイルにする
+    self.title = [CoreDataManager sharedManager].storeFileName;
 }
 
 - (void)didReceiveMemoryWarning {
