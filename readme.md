@@ -2,7 +2,7 @@
 
 Manage multiple SQlite file example project.
 
-同じ複数xcdatamodeldからできたSQliteファイルを扱って、切り替えることができるかを試すサンプルです。
+同じxcdatamodeldからできた複数のSQliteファイルを扱って、切り替えることができるかを試すサンプルです。
 
 ## Usage
 
