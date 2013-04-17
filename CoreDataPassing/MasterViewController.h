@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+- (IBAction)handleChangeCoreData:(id)sender;
 
 @end
