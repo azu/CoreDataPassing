@@ -31,6 +31,7 @@
 		11B1D6D4C97041CAB6BF6EB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C20362489A2D2A605ED8 /* DataListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListTableView.m; sourceTree = "<group>"; };
 		17B5C48A15210DC138FF78B2 /* DataListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListTableView.h; sourceTree = "<group>"; };
+		17B5C58AFDCD36CE413D614A /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
 		17B5C72B5CF76ABBC4A74566 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		17B5C967C4D6AB3A7B36D458 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 				7301761E171E383D00341769 /* CoreDataPassing */,
 				73017615171E383D00341769 /* Frameworks */,
 				73017614171E383D00341769 /* Products */,
+				17B5C58AFDCD36CE413D614A /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
