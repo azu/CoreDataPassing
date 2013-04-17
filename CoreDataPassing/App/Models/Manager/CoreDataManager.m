@@ -6,6 +6,7 @@
 #import "CoreDataManager.h"
 
 @interface CoreDataManager ()
+@property(nonatomic, copy) NSString *storeFileName;
 @end
 
 @implementation CoreDataManager {
@@ -52,7 +53,7 @@ static CoreDataManager *sharedManager_ = nil;
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-
+    NSLog(@"%s", sel_getName(_cmd));
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
@@ -72,6 +73,22 @@ static CoreDataManager *sharedManager_ = nil;
     return _managedObjectModel;
 }
 
+
+- (NSString *)storeFileName {
+    if (_storeFileName == nil) {
+        _storeFileName = @"CoreDataPassing.sqlite";
+    }
+    return _storeFileName;
+}
+- (void)resetStoreProperty {
+    _managedObjectContext = nil;
+    _persistentStoreCoordinator = nil;
+}
+
+- (void)changeStoreFileName:(NSString *) storeFileName {
+    [self resetStoreProperty];
+    self.storeFileName = storeFileName;
+}
 // Returns the persistent store coordinator for the application.
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
@@ -79,7 +96,7 @@ static CoreDataManager *sharedManager_ = nil;
         return _persistentStoreCoordinator;
     }
 
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreDataPassing.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:self.storeFileName];
 
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

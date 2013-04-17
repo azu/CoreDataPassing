@@ -10,6 +10,7 @@
 
 #import "DetailViewController.h"
 #import "EventModel.h"
+#import "CoreDataManager.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *) cell atIndexPath:(NSIndexPath *) indexPath;
@@ -26,6 +27,14 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+}
+
+- (void)viewWillAppear:(BOOL) animated {
+    [super viewWillAppear:animated];
+
+    // 切り替わった時に作り直す
+    _fetchedResultsController = nil;
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -112,7 +121,7 @@ forRowAtIndexPath:(NSIndexPath *) indexPath {
 
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:[CoreDataManager sharedManager].managedObjectContext];
     [fetchRequest setEntity:entity];
 
     // Set the batch size to a suitable number.
@@ -126,7 +135,7 @@ forRowAtIndexPath:(NSIndexPath *) indexPath {
 
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[CoreDataManager sharedManager].managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
 
@@ -203,6 +212,4 @@ forRowAtIndexPath:(NSIndexPath *) indexPath {
     cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
 }
 
-- (IBAction)handleChangeCoreData:(id) sender {
-}
 @end

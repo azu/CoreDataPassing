@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17B5C3FB283E73E8F9B1A892 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */; };
+		17B5CB0A0462D2FE24CB9D64 /* DataListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C20362489A2D2A605ED8 /* DataListTableView.m */; };
 		73017617171E383D00341769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73017616171E383D00341769 /* UIKit.framework */; };
 		73017619171E383D00341769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73017618171E383D00341769 /* Foundation.framework */; };
 		7301761B171E383D00341769 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7301761A171E383D00341769 /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		11B1D6D4C97041CAB6BF6EB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5C20362489A2D2A605ED8 /* DataListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListTableView.m; sourceTree = "<group>"; };
+		17B5C48A15210DC138FF78B2 /* DataListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListTableView.h; sourceTree = "<group>"; };
 		17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		17B5CEA4586F7D0FF23DD9EE /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		73017613171E383D00341769 /* CoreDataPassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B5C0B90C6B7A8487A7786F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C48A15210DC138FF78B2 /* DataListTableView.h */,
+				17B5C20362489A2D2A605ED8 /* DataListTableView.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		17B5C83A2218070690AEA500 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				73017642171E38AE00341769 /* Models */,
+				17B5C0B90C6B7A8487A7786F /* ViewControllers */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -275,6 +288,7 @@
 				73017647171E38AE00341769 /* _EventModel.m in Sources */,
 				73017648171E38AE00341769 /* EventModel.m in Sources */,
 				17B5C3FB283E73E8F9B1A892 /* CoreDataManager.m in Sources */,
+				17B5CB0A0462D2FE24CB9D64 /* DataListTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

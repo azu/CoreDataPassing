@@ -14,4 +14,5 @@
 
 - (NSManagedObjectContext *)managedObjectContext;
 
+- (void)changeStoreFileName:(NSString *) storeFileName;
 @end
