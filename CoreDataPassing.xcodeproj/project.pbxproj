@@ -25,11 +25,10 @@
 		7301763B171E383D00341769 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7301763A171E383D00341769 /* DetailViewController.m */; };
 		73017647171E38AE00341769 /* _EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73017644171E38AE00341769 /* _EventModel.m */; };
 		73017648171E38AE00341769 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73017646171E38AE00341769 /* EventModel.m */; };
-		E6300C3682B148F3BF1CEE2F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B1D6D4C97041CAB6BF6EB1 /* libPods.a */; settings = {}; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11B1D6D4C97041CAB6BF6EB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B1D6D4C97041CAB6BF6EB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C20362489A2D2A605ED8 /* DataListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListTableView.m; sourceTree = "<group>"; };
 		17B5C48A15210DC138FF78B2 /* DataListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListTableView.h; sourceTree = "<group>"; };
 		17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
@@ -58,7 +57,6 @@
 		73017644171E38AE00341769 /* _EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _EventModel.m; sourceTree = "<group>"; };
 		73017645171E38AE00341769 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
 		73017646171E38AE00341769 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventModel.m; sourceTree = "<group>"; };
-		750BCD68E57441BAA27FB540 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				73017619171E383D00341769 /* Foundation.framework in Frameworks */,
 				7301761B171E383D00341769 /* CoreGraphics.framework in Frameworks */,
 				7301761D171E383D00341769 /* CoreData.framework in Frameworks */,
-				E6300C3682B148F3BF1CEE2F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +98,6 @@
 				7301761E171E383D00341769 /* CoreDataPassing */,
 				73017615171E383D00341769 /* Frameworks */,
 				73017614171E383D00341769 /* Products */,
-				750BCD68E57441BAA27FB540 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,11 +180,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7301763E171E383D00341769 /* Build configuration list for PBXNativeTarget "CoreDataPassing" */;
 			buildPhases = (
-				7C5EE63ADEA14205A496C81E /* Check Pods Manifest.lock */,
 				7301760F171E383D00341769 /* Sources */,
 				73017610171E383D00341769 /* Frameworks */,
 				73017611171E383D00341769 /* Resources */,
-				2184B767659149C2B5F95085 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,8 +212,6 @@
 			mainGroup = 7301760A171E383D00341769;
 			productRefGroup = 73017614171E383D00341769 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				73017612171E383D00341769 /* CoreDataPassing */,
@@ -241,39 +233,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2184B767659149C2B5F95085 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 1;
-		};
-		7C5EE63ADEA14205A496C81E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 1;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7301760F171E383D00341769 /* Sources */ = {
@@ -372,7 +331,6 @@
 		};
 		7301763F171E383D00341769 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 750BCD68E57441BAA27FB540 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataPassing/CoreDataPassing-Prefix.pch";
@@ -384,7 +342,6 @@
 		};
 		73017640171E383D00341769 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 750BCD68E57441BAA27FB540 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreDataPassing/CoreDataPassing-Prefix.pch";
@@ -413,6 +370,7 @@
 				73017640171E383D00341769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

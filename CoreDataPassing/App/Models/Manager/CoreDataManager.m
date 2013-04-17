@@ -53,7 +53,6 @@ static CoreDataManager *sharedManager_ = nil;
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-    NSLog(@"%s", sel_getName(_cmd));
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
