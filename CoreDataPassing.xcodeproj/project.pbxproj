@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		17B5C3FB283E73E8F9B1A892 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */; };
+		17B5C7E326A5F208AD0510DA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C967C4D6AB3A7B36D458 /* DetailViewController.m */; };
 		17B5CB0A0462D2FE24CB9D64 /* DataListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C20362489A2D2A605ED8 /* DataListTableView.m */; };
+		17B5CB164839167C6141C6ED /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CCACCD0B6ED43829B716 /* MasterViewController.m */; };
 		73017617171E383D00341769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73017616171E383D00341769 /* UIKit.framework */; };
 		73017619171E383D00341769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73017618171E383D00341769 /* Foundation.framework */; };
 		7301761B171E383D00341769 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7301761A171E383D00341769 /* CoreGraphics.framework */; };
@@ -21,8 +23,6 @@
 		7301762F171E383D00341769 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7301762E171E383D00341769 /* Default-568h@2x.png */; };
 		73017632171E383D00341769 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73017630171E383D00341769 /* MainStoryboard.storyboard */; };
 		73017635171E383D00341769 /* CoreDataPassing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73017633171E383D00341769 /* CoreDataPassing.xcdatamodeld */; };
-		73017638171E383D00341769 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73017637171E383D00341769 /* MasterViewController.m */; };
-		7301763B171E383D00341769 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7301763A171E383D00341769 /* DetailViewController.m */; };
 		73017647171E38AE00341769 /* _EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73017644171E38AE00341769 /* _EventModel.m */; };
 		73017648171E38AE00341769 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73017646171E38AE00341769 /* EventModel.m */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,11 @@
 		11B1D6D4C97041CAB6BF6EB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C20362489A2D2A605ED8 /* DataListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListTableView.m; sourceTree = "<group>"; };
 		17B5C48A15210DC138FF78B2 /* DataListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListTableView.h; sourceTree = "<group>"; };
+		17B5C72B5CF76ABBC4A74566 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		17B5C967C4D6AB3A7B36D458 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		17B5CB2004B0E079B0CE1BDD /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		17B5CCACCD0B6ED43829B716 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		17B5CDA2F2F0A18DCF0F50E0 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		17B5CEA4586F7D0FF23DD9EE /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		73017613171E383D00341769 /* CoreDataPassing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPassing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73017616171E383D00341769 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,10 +53,6 @@
 		7301762E171E383D00341769 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		73017631171E383D00341769 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		73017634171E383D00341769 /* CoreDataPassing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPassing.xcdatamodel; sourceTree = "<group>"; };
-		73017636171E383D00341769 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		73017637171E383D00341769 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		73017639171E383D00341769 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		7301763A171E383D00341769 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		73017643171E38AE00341769 /* _EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _EventModel.h; sourceTree = "<group>"; };
 		73017644171E38AE00341769 /* _EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _EventModel.m; sourceTree = "<group>"; };
 		73017645171E38AE00341769 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
@@ -79,6 +79,10 @@
 			children = (
 				17B5C48A15210DC138FF78B2 /* DataListTableView.h */,
 				17B5C20362489A2D2A605ED8 /* DataListTableView.m */,
+				17B5CCACCD0B6ED43829B716 /* MasterViewController.m */,
+				17B5CDA2F2F0A18DCF0F50E0 /* DetailViewController.h */,
+				17B5C72B5CF76ABBC4A74566 /* MasterViewController.h */,
+				17B5C967C4D6AB3A7B36D458 /* DetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,10 +132,6 @@
 				73017627171E383D00341769 /* AppDelegate.h */,
 				73017628171E383D00341769 /* AppDelegate.m */,
 				73017630171E383D00341769 /* MainStoryboard.storyboard */,
-				73017636171E383D00341769 /* MasterViewController.h */,
-				73017637171E383D00341769 /* MasterViewController.m */,
-				73017639171E383D00341769 /* DetailViewController.h */,
-				7301763A171E383D00341769 /* DetailViewController.m */,
 				73017633171E383D00341769 /* CoreDataPassing.xcdatamodeld */,
 				7301761F171E383D00341769 /* Supporting Files */,
 			);
@@ -242,12 +242,12 @@
 				73017625171E383D00341769 /* main.m in Sources */,
 				73017629171E383D00341769 /* AppDelegate.m in Sources */,
 				73017635171E383D00341769 /* CoreDataPassing.xcdatamodeld in Sources */,
-				73017638171E383D00341769 /* MasterViewController.m in Sources */,
-				7301763B171E383D00341769 /* DetailViewController.m in Sources */,
 				73017647171E38AE00341769 /* _EventModel.m in Sources */,
 				73017648171E38AE00341769 /* EventModel.m in Sources */,
 				17B5C3FB283E73E8F9B1A892 /* CoreDataManager.m in Sources */,
 				17B5CB0A0462D2FE24CB9D64 /* DataListTableView.m in Sources */,
+				17B5CB164839167C6141C6ED /* MasterViewController.m in Sources */,
+				17B5C7E326A5F208AD0510DA /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
